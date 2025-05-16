@@ -4,7 +4,7 @@ class Library {
     }
 
     addBook(book) {
-        this.books.push(book);
+        this.books.push(...book);
     }
 
     listAllBooks() {
@@ -38,6 +38,7 @@ let book2 = new Book("To Kill a Mockingbird", "987654321", 12.99, "Harper Lee");
 let book3 = new Book("1984", "123456789", 15.99, "George Orwell");
 
 
-library.addBook(book1);
-library.addBook(book2);
-library.addBook(book3);
+// library.addBook(book1);
+// library.addBook(book2);
+// library.addBook(book3);
+library.addBook([book1, book2, book3]);
